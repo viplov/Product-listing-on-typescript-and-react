@@ -1,0 +1,118 @@
+.product-card {
+    max-width: 304px;
+    margin: auto;
+    position: relative;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.skeleton-image {
+    width: 280px;
+    height: 280px;
+    border-radius: 4px;
+
+}
+
+.skeleton-text {
+    height: 16px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.skeleton-price {
+    height: 20px;
+    width: 100px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
+.product-card h4 {
+    margin: 10px 0 5px;
+}
+
+.product-card .brand {
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.product-card .price {
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.product-card .original-price {
+    font-size: 14px;
+    color: #7e818c;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+.product-card .discount {
+    color: #ff905a;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.product-card .rating {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.product-card .rating-stars {
+    background-color: #26a541;
+    color: white;
+    font-size: 12px;
+    padding: 2px 4px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+
+.product-card .wishlist {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.product-card .wishlist:hover {
+    transform: scale(1.1);
+    background: rgba(255, 63, 108, 0.1);
+}
